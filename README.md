@@ -1,4 +1,3 @@
-This is a comprehensive, professional `README.md` template designed for a high-quality full-stack starter kit. It explains the "why" and the "how" of your Next.js + Nest.js + Better-Auth architecture.
 
 ---
 

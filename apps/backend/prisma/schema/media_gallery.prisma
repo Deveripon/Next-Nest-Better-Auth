@@ -1,0 +1,28 @@
+model MediaGallery {
+  id           String   @id @default(uuid())
+  url          String
+  thumbnail    String?
+  originalName String
+  fileName     String?
+  altText      String?
+  caption      String?
+  size         Int
+  format       String
+  width        Int
+  height       Int
+  cloudinaryId String
+  publicId     String   @unique
+  resourceType String
+  tags         String[]
+  uploadedAt   DateTime @default(now())
+  userId       String
+  uploadedBy   User     @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([id])
+  @@index([publicId])
+  @@index([url])
+  @@index([userId])
+  @@map("media_gallery")
+}

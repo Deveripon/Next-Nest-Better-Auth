@@ -1,0 +1,17 @@
+{
+
+    "tourTypes": {
+        "tourTypes": [
+            "Adventure Tours",
+            "Wildlife Safari",
+            "FASDFSADFASD"
+        ],
+        "difficulty": "Strenuous - High fitness required",
+        "suitableFor": [
+            "Families with Kids",
+            "Senior Citizens"
+        ],
+        "tourStyle": "Basic Package"
+    }
+
+}

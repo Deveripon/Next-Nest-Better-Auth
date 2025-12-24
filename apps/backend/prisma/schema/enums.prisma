@@ -1,0 +1,108 @@
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  MANAGER
+  USER
+  GUEST
+}
+
+enum ownerRole {
+  SUPER_ADMIN
+}
+
+enum UserRole {
+  ADMIN
+  MANAGER
+  USER
+  GUEST
+}
+
+enum Permission {
+  // User Management
+  MANAGE_USERS
+  VIEW_USERS
+  CREATE_USER
+  UPDATE_USER
+  DELETE_USER
+
+  // Content Management
+  CREATE_CONTENT
+  VIEW_CONTENT
+  EDIT_CONTENT
+  DELETE_CONTENT
+
+  // Category Management
+  CREATE_CATEGORY
+  VIEW_CATEGORIES
+  EDIT_CATEGORY
+  DELETE_CATEGORY
+
+  // Media Management
+  UPLOAD_MEDIA
+  MANAGE_MEDIA
+  VIEW_MEDIA
+
+  // Client/Lead Management
+  VIEW_LEADS
+  EDIT_LEAD
+  DELETE_LEAD
+  VIEW_ENQUIRIES
+  DELETE_ENQUIRY
+  REPLY_ENQUIRY
+
+  // Financial/Order Management
+  VIEW_ORDERS
+  EDIT_ORDER
+  DELETE_ORDER
+  VIEW_PAYMENTS
+  EDIT_PAYMENT
+  DELETE_PAYMENT
+
+  // Profile Management
+  VIEW_PROFILE
+  EDIT_PROFILE
+
+  // Settings Management
+  MANAGE_SETTINGS
+  VIEW_SETTINGS
+
+  // Analytics & Reports
+  VIEW_ANALYTICS
+  EXPORT_DATA
+
+  // System Administration
+  BULK_OPERATIONS
+  MANAGE_SYSTEM
+}
+
+enum ContentStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+  TRASHED
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  REFUNDED
+}
+
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  DELETED
+}
+
+
+
+
+
+
+

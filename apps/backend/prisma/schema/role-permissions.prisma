@@ -1,0 +1,10 @@
+
+model RolePermission {
+  id         String     @id @default(uuid())
+  role       Role
+  permission Permission
+
+  @@unique([role, permission])
+  @@index([permission])
+  @@map("role_permissions")
+}

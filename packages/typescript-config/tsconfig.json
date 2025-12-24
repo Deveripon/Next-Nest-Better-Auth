@@ -1,0 +1,16 @@
+{
+    "extends": "@workspace/typescript-config/base.json",
+    "compilerOptions": {
+        "composite": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "rootDir": "src",
+        "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["src/**/*", "prisma/schema.prisma"],
+    "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
+}
+
